@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STEM Travel | Book with Trip.com</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f3f6fa;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #0052cc, #0a7aff);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.95;
+    }
+
+    .flags-container {
+      overflow-x: auto;
+      white-space: nowrap;
+      padding: 15px 10px;
+      background: #fff;
+      box-shadow: inset 0 0 6px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .flags-container img {
+      height: 30px;
+      margin: 0 8px;
+      vertical-align: middle;
+    }
+
+    .widget-section {
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') no-repeat center center/cover;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .widget-box {
+      display: inline-block;
+      background: #ffffffee;
+      padding: 20px;
+      border-radius: 16px;
+      max-width: 700px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    }
+
+    .calendar-icon {
+      position: fixed;
+      bottom: 110px;
+      right: 25px;
+      background: #ffffff;
+      border: 2px solid #2681ff;
+      color: #2681ff;
+      padding: 14px;
+      border-radius: 50%;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+      font-size: 22px;
+      cursor: pointer;
+      z-index: 999;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 30px;
+      right: 25px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      padding: 16px;
+      font-size: 24px;
+      z-index: 999;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .whatsapp-float:hover {
+      background-color: #20c15d;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+      padding: 30px 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Explore the World with Trip.com</h1>
+    <p>Book your next flight or hotel — quick, easy & affordable</p>
+  </header>
+
+  <!-- Country Flags Section -->
+  <div class="flags-container">
+    <img src="https://flagcdn.com/w40/ph.png" alt="Philippines">
+    <img src="https://flagcdn.com/w40/ae.png" alt="UAE">
+    <img src="https://flagcdn.com/w40/us.png" alt="USA">
+    <img src="https://flagcdn.com/w40/uk.png" alt="UK">
+    <img src="https://flagcdn.com/w40/au.png" alt="Australia">
+    <img src="https://flagcdn.com/w40/ca.png" alt="Canada">
+    <img src="https://flagcdn.com/w40/jp.png" alt="Japan">
+    <img src="https://flagcdn.com/w40/kr.png" alt="South Korea">
+    <img src="https://flagcdn.com/w40/de.png" alt="Germany">
+    <img src="https://flagcdn.com/w40/fr.png" alt="France">
+    <img src="https://flagcdn.com/w40/it.png" alt="Italy">
+    <img src="https://flagcdn.com/w40/in.png" alt="India">
+  </div>
+
+  <!-- Booking Widget Section -->
+  <section class="widget-section">
+    <div class="widget-box">
+      <!-- Trip.com Booking Widget -->
+      <script async src="https://tp.media/content?trs=341531&shmarker=553748&locale=en&curr=USD&powered_by=true&border_radius=12&plain=true&color_button=%232681ff&color_button_text=%23ffffff&color_border=%232681ff&promo_id=4132&campaign_id=121" charset="utf-8"></script>
+    </div>
+  </section>
+
+  <!-- Floating Calendar Icon -->
+  <div class="calendar-icon" title="Pick your travel dates!">📅</div>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/971561472966" target="_blank" class="whatsapp-float" title="Chat on WhatsApp">💬</a>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 STEM Corporate FZC LLC – Sharjah Publishing City, UAE<br />
+    📩 stemcorporatefzcllc@gmail.com | 📞 +971 56 147 2966
+  </footer>
+
+</body>
+</html>
